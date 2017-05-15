@@ -11,7 +11,7 @@ The skills we are interested in now:
 
 ### Option 1: Forum Engine
 
-Let's make the basics of a forum web page! The forum page consists arbitrary number of topics. One topic can have a lot of entries. An entry (comment) contains the creator's name and the comment text. It can be optionally a reply to another comment. An entry can only appear when it has already been moderated. 
+Let's make the basics of a forum web application! The forum consists arbitrary number of topics. One topic can have a lot of entries. An entry (comment) contains the creator's name and the comment text. It can be optionally a reply to another comment. An entry can only appear when it has already been moderated. 
 
 Don't worry, we will deal only with the basic structure this time:
 
