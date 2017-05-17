@@ -24,6 +24,7 @@ Tasks:
 1. Ensure that we can have only one `Forum` instance, the `Forum` can have many `Topic`s, a `Topic` can have many `Comments`s. Use `addXxxx` functions where the `xxxx` part is the type's name regarding to the addition.
 1. The Comment has an `moderated` logical flag, which is `false` in the beginning. We can change its value by the `toggleModeration` function call which has no parameters.
 1. The `Topic`'s `getModeratedComments` function only returns those `Comment` instances, which `moderated` flag is equal to `true`.
+1. Test your code by making a few sample instances and printing them out. (hint: add `toString` functions) 
 1. Bonus: Write unit tests for the `Topic` class
 
 
@@ -33,7 +34,7 @@ Let's simulate a news agency's website! Any news category consists arbitrary num
 
 Don't worry, we will deal only with the basic structure this time:
 
-1. Clone the base repo
+1. Clone the base repo, make sure you push all your changes at the end!
 1. Create 3 classes: `Category`, `Post`, `Tag`
    - When we create a `Category`, we pass its name to it
    - When we create a `Post`, we must pass its title, textual content and author's name to it. It automatically sets its URL. The URL is the title converted to lowercase, spaces are converted to `-` (minus) signs, then every non-alphanumeric character is stripped (so only leave the`[a-z0-9\-]` characters). Example: [https://stackoverflow.com/questions/109383/sort-a-mapkey-value-by-values-java](https://stackoverflow.com/questions/109383/sort-a-mapkey-value-by-values-java)
