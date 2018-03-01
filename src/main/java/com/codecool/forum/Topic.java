@@ -2,6 +2,7 @@ package main.java.com.codecool.forum;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Topic extends Entry {
 
@@ -16,5 +17,11 @@ public class Topic extends Entry {
 
     public boolean addComment(Comment comment) {
         return comments.add(comment);
+    }
+
+    public List<Comment> getModeratedComments() {
+        return this.comments.stream()
+                .filter(Comment::isModerated)
+                .collect(Collectors.toList());
     }
 }

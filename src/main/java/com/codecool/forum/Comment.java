@@ -11,4 +11,8 @@ public class Comment extends Entry {
     public void toggleModeration() {
         this.moderated = true;
     }
+
+    public boolean isModerated() {
+        return moderated;
+    }
 }
