@@ -28,4 +28,8 @@ public class Topic extends Entry {
     public String getTitle() {
         return title;
     }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
 }
