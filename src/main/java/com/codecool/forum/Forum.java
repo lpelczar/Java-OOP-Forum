@@ -1,8 +1,12 @@
 package main.java.com.codecool.forum;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Forum {
 
     private static Forum instance = null;
+    private List<Topic> topics = new ArrayList<>();
 
     private Forum() {}
 
@@ -11,5 +15,9 @@ public class Forum {
             instance = new Forum();
         }
         return instance;
+    }
+
+    private boolean addTopic(Topic topic) {
+        return topics.add(topic);
     }
 }
