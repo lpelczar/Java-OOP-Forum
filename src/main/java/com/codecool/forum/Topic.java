@@ -32,4 +32,9 @@ public class Topic extends Entry {
     public List<Comment> getComments() {
         return comments;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " Title: " + title;
+    }
 }

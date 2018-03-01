@@ -22,4 +22,9 @@ abstract class Entry {
     public String getMessage() {
         return message;
     }
+
+    @Override
+    public String toString() {
+        return "Creation date: " + creationDate + " Message: " + message + " ID: " + id;
+    }
 }

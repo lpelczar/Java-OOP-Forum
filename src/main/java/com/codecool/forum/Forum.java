@@ -17,7 +17,11 @@ public class Forum {
         return instance;
     }
 
-    private boolean addTopic(Topic topic) {
+    public boolean addTopic(Topic topic) {
         return topics.add(topic);
+    }
+
+    public List<Topic> getTopics() {
+        return topics;
     }
 }

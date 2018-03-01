@@ -15,4 +15,9 @@ public class Comment extends Entry {
     public boolean isModerated() {
         return moderated;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " Moderated: " + moderated;
+    }
 }
