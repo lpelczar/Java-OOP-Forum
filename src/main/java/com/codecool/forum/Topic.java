@@ -24,4 +24,8 @@ public class Topic extends Entry {
                 .filter(Comment::isModerated)
                 .collect(Collectors.toList());
     }
+
+    public String getTitle() {
+        return title;
+    }
 }

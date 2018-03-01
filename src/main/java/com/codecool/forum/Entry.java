@@ -18,4 +18,8 @@ abstract class Entry {
     void setMessage(String message) {
         this.message = message;
     }
+
+    public String getMessage() {
+        return message;
+    }
 }
